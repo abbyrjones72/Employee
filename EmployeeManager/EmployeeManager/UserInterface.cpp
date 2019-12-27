@@ -23,9 +23,10 @@ int displayMenu()
 	cout << "1) Hire a new employee" << endl;
 	cout << "2) Fire an employee" << endl;
 	cout << "3) Promote an employee" << endl;
-	cout << "4) List all employee" << endl;
-	cout << "5) List all current employees" << endl;
-	cout << "6) List all former employees" << endl;
+	cout << "4) Demote an employee" << endl;
+	cout << "5) List all employees" << endl;
+	cout << "6) List all current employees" << endl;
+	cout << "7) List all former employees" << endl;
 	cout << "0) Quit" << endl;
 	cout << endl;
 	cout << "--->";
@@ -117,11 +118,10 @@ void doDemote(Database& inDB)
 		cerr << "Unable to demote employee." << endl;
 	}
 }
-
 int main(int argc, char** argv)
 {
 	Database employeeDB;
-	bool done = false;
+	bool done = true;
 
 	while (done != false)
 	{
