@@ -42,6 +42,7 @@ namespace Records
 		return theEmployee;
 	}
 
+	// get employee by employeeID
 	Employee& Database::getEmployee(int inEmployeeNumber)
 	{
 		for (; i < m_nextEmployeeNumber; i++)
@@ -55,7 +56,7 @@ namespace Records
 		throw exception();
 	}
 
-	// overloaded by firstname and lastname
+	// get employee overloaded by firstname and lastname
 	Employee& Database::getEmployee(string inFirstName, string inLastName)
 	{
 		for (; i < m_nextSlot; i++)

@@ -16,5 +16,21 @@ int main(int argc, char** argv)
 	emp2.hire();
 	emp2.setSalary(100000);
 
+	Employee emp3 = db.addEmployee("Joan", "OfArc");
+	emp3.setSalary(122102);
+	emp3.promote();
+
+	cout << "all employees: " << endl;
+	cout << endl;
+	db.displayAll();
+
+	cout << "current employees" << endl;
+	cout << endl;
+	db.displayCurrent();
+
+	cout << "former employees" << endl;
+	cout << endl;
+	db.displayFormer();
+	   
 	return 0;
 }

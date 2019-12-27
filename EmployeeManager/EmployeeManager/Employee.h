@@ -1,5 +1,5 @@
 // Employee.h
-
+#pragma once
 #include <iostream>
 
 namespace Records
